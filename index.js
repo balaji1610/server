@@ -15,7 +15,7 @@ app.use(cors());
 //status
 
 app.get("/status", (req, res) => {
-  res.status(200).send("Server is Running !!!!!");
+  res.status(200).send("<h1>Server is Running !!!!!</h1>");
 });
 
 app.get("/exercises", (req, res) => {
