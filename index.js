@@ -18,16 +18,51 @@ app.get("/status", (req, res) => {
   res.status(200).send("<h1>Server is Running !!!!!</h1>");
 });
 
+//exercises
 app.get("/exercises", (req, res) => {
   res.status(200).send(exercises);
 });
 
-//bodypartlist
-app.get("/exercises/bodyPartList", (req, res) => {
-  res.status(200).send(list.bodypartlist());
+//exercises:id
+app.get("/exercises/:id", (req, res) => {
+  const getId = exercises.filter((el) => {
+    return el.id == req.params.id;
+  });
+  if (getId.length) {
+    res.status(200).send(getId);
+  } else {
+    res.status(404).send("Not Found Id");
+  }
 });
 
-//bodyPart
+//exercises/target/:target
+app.get("/exercises/target/:target", (req, res) => {
+  console.log(req.params.target);
+  const getTarget = exercises.filter((el) => {
+    return el.target === req.params.target;
+  });
+
+  if (getTarget.length) {
+    res.status(200).send(getTarget);
+  } else {
+    res.status(404).send("Not Found Target");
+  }
+});
+
+//exercises/equipment/:equipment
+app.get("/exercises/equipment/:equipment", (req, res) => {
+  const getequipment = exercises.filter((el) => {
+    return el.equipment === req.params.equipment;
+  });
+
+  if (getequipment.length) {
+    res.status(200).send(getequipment);
+  } else {
+    res.status(404).send("Not Found equipment");
+  }
+});
+
+//exercises/bodyPart/:bodyPart
 app.get("/exercises/bodyPart/:bodypart", (req, res) => {
   const getBodyPart = exercises.filter((el) => {
     return el.bodyPart === req.params.bodypart;
@@ -39,6 +74,12 @@ app.get("/exercises/bodyPart/:bodypart", (req, res) => {
   }
 });
 
+//bodypartlist
+app.get("/exercises/bodyPartList", (req, res) => {
+  res.status(200).send(list.bodypartlist());
+});
+
+//image/:id
 app.get("/image", (req, res) => {
   const { exerciseId } = req.query;
   const findImageId = images
@@ -47,7 +88,7 @@ app.get("/image", (req, res) => {
     .map((el) => {
       return el.image;
     });
-    
+
   if (findImageId.length) {
     res.sendFile(findImageId[0]);
   } else {
