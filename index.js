@@ -47,6 +47,7 @@ app.get("/image", (req, res) => {
     .map((el) => {
       return el.image;
     });
+    
   if (findImageId.length) {
     res.sendFile(findImageId[0]);
   } else {
