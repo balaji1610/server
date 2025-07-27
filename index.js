@@ -24,7 +24,7 @@ app.get("/exercises", (req, res) => {
 });
 
 //exercises:id
-app.get("/exercises/:id", (req, res) => {
+app.get("/exercises/id/:id", (req, res) => {
   const getId = exercises.filter((el) => {
     return el.id == req.params.id;
   });
@@ -62,6 +62,12 @@ app.get("/exercises/equipment/:equipment", (req, res) => {
   }
 });
 
+//bodypartlist
+app.get("/exercises/bodyPartList", (req, res) => {
+  console.log("bodyPartList");
+  res.status(200).send(list.bodypartlist());
+});
+
 //exercises/bodyPart/:bodyPart
 app.get("/exercises/bodyPart/:bodypart", (req, res) => {
   const getBodyPart = exercises.filter((el) => {
@@ -72,11 +78,6 @@ app.get("/exercises/bodyPart/:bodypart", (req, res) => {
   } else {
     res.status(404).send("Not Found");
   }
-});
-
-//bodypartlist
-app.get("/exercises/bodyPartList", (req, res) => {
-  res.status(200).send(list.bodypartlist());
 });
 
 //image/:id
