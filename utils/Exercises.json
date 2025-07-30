@@ -2,7 +2,7 @@
   {
     "bodyPart": "back",
     "equipment": "cable",
-    "id": "0007",
+    "exerciseId": "0007",
     "name": "alternate lateral pulldown",
     "target": "lats",
     "secondaryMuscles": ["biceps", "rhomboids"],
@@ -20,7 +20,7 @@
   {
     "bodyPart": "back",
     "equipment": "leverage machine",
-    "id": "0015",
+    "exerciseId": "0015",
     "name": "assisted parallel close grip pull-up",
     "target": "lats",
     "secondaryMuscles": ["biceps", "forearms"],
@@ -40,7 +40,7 @@
   {
     "bodyPart": "back",
     "equipment": "leverage machine",
-    "id": "0017",
+    "exerciseId": "0017",
     "name": "assisted pull-up",
     "target": "lats",
     "secondaryMuscles": ["biceps", "forearms"],
@@ -60,7 +60,7 @@
   {
     "bodyPart": "back",
     "equipment": "barbell",
-    "id": "0022",
+    "exerciseId": "0022",
     "name": "barbell pullover to press",
     "target": "lats",
     "secondaryMuscles": ["triceps", "chest", "shoulders"],
@@ -78,7 +78,7 @@
   {
     "bodyPart": "back",
     "equipment": "barbell",
-    "id": "0027",
+    "exerciseId": "0027",
     "name": "barbell bent over row",
     "target": "upper back",
     "secondaryMuscles": ["biceps", "forearms"],
@@ -97,7 +97,7 @@
   {
     "bodyPart": "back",
     "equipment": "barbell",
-    "id": "0034",
+    "exerciseId": "0034",
     "name": "barbell decline bent arm pullover",
     "target": "lats",
     "secondaryMuscles": ["triceps", "chest"],
@@ -115,7 +115,7 @@
   {
     "bodyPart": "back",
     "equipment": "barbell",
-    "id": "0037",
+    "exerciseId": "0037",
     "name": "barbell decline wide-grip pullover",
     "target": "lats",
     "secondaryMuscles": ["triceps", "chest"],
@@ -133,7 +133,7 @@
   {
     "bodyPart": "back",
     "equipment": "barbell",
-    "id": "0049",
+    "exerciseId": "0049",
     "name": "barbell incline row",
     "target": "upper back",
     "secondaryMuscles": ["biceps", "forearms"],
@@ -153,7 +153,7 @@
   {
     "bodyPart": "back",
     "equipment": "barbell",
-    "id": "0064",
+    "exerciseId": "0064",
     "name": "barbell one arm bent over row",
     "target": "upper back",
     "secondaryMuscles": ["biceps", "forearms"],
@@ -171,7 +171,7 @@
   {
     "bodyPart": "back",
     "equipment": "barbell",
-    "id": "0073",
+    "exerciseId": "0073",
     "name": "barbell pullover",
     "target": "lats",
     "secondaryMuscles": ["chest", "triceps"],
@@ -189,7 +189,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "body weight",
-    "id": "0501",
+    "exerciseId": "0501",
     "name": "jack burpee",
     "target": "cardiovascular system",
     "secondaryMuscles": [
@@ -216,7 +216,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "body weight",
-    "id": "0630",
+    "exerciseId": "0630",
     "name": "mountain climber",
     "target": "cardiovascular system",
     "secondaryMuscles": ["core", "shoulders", "triceps"],
@@ -234,7 +234,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "body weight",
-    "id": "0684",
+    "exerciseId": "0684",
     "name": "run (equipment)",
     "target": "cardiovascular system",
     "secondaryMuscles": ["quadriceps", "hamstrings", "calves"],
@@ -252,7 +252,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "body weight",
-    "id": "0685",
+    "exerciseId": "0685",
     "name": "run",
     "target": "cardiovascular system",
     "secondaryMuscles": ["quadriceps", "hamstrings", "calves"],
@@ -270,7 +270,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "leverage machine",
-    "id": "0798",
+    "exerciseId": "0798",
     "name": "stationary bike walk",
     "target": "cardiovascular system",
     "secondaryMuscles": ["quadriceps", "hamstrings", "calves"],
@@ -290,7 +290,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "body weight",
-    "id": "1160",
+    "exerciseId": "1160",
     "name": "burpee",
     "target": "cardiovascular system",
     "secondaryMuscles": [
@@ -316,7 +316,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "dumbbell",
-    "id": "1201",
+    "exerciseId": "1201",
     "name": "dumbbell burpee",
     "target": "cardiovascular system",
     "secondaryMuscles": [
@@ -344,7 +344,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "stationary bike",
-    "id": "2138",
+    "exerciseId": "2138",
     "name": "stationary bike run v. 3",
     "target": "cardiovascular system",
     "secondaryMuscles": ["quadriceps", "hamstrings", "calves"],
@@ -365,7 +365,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "elliptical machine",
-    "id": "2141",
+    "exerciseId": "2141",
     "name": "walk elliptical cross trainer",
     "target": "cardiovascular system",
     "secondaryMuscles": ["quadriceps", "hamstrings", "glutes", "calves"],
@@ -385,7 +385,7 @@
   {
     "bodyPart": "cardio",
     "equipment": "stepmill machine",
-    "id": "2311",
+    "exerciseId": "2311",
     "name": "walking on stepmill",
     "target": "cardiovascular system",
     "secondaryMuscles": ["quadriceps", "hamstrings", "glutes", "calves"],
@@ -405,7 +405,7 @@
   {
     "bodyPart": "chest",
     "equipment": "leverage machine",
-    "id": "0009",
+    "exerciseId": "0009",
     "name": "assisted chest dip (kneeling)",
     "target": "pectorals",
     "secondaryMuscles": ["triceps", "shoulders"],
@@ -423,7 +423,7 @@
   {
     "bodyPart": "chest",
     "equipment": "barbell",
-    "id": "0025",
+    "exerciseId": "0025",
     "name": "barbell bench press",
     "target": "pectorals",
     "secondaryMuscles": ["triceps", "shoulders"],
@@ -443,7 +443,7 @@
   {
     "bodyPart": "chest",
     "equipment": "barbell",
-    "id": "0033",
+    "exerciseId": "0033",
     "name": "barbell decline bench press",
     "target": "pectorals",
     "secondaryMuscles": ["triceps", "shoulders"],
@@ -461,7 +461,7 @@
   {
     "bodyPart": "chest",
     "equipment": "barbell",
-    "id": "0036",
+    "exerciseId": "0036",
     "name": "barbell decline wide-grip press",
     "target": "pectorals",
     "secondaryMuscles": ["triceps", "shoulders"],
@@ -479,7 +479,7 @@
   {
     "bodyPart": "chest",
     "equipment": "barbell",
-    "id": "0040",
+    "exerciseId": "0040",
     "name": "barbell front raise and pullover",
     "target": "pectorals",
     "secondaryMuscles": ["deltoids", "triceps"],
@@ -498,7 +498,7 @@
   {
     "bodyPart": "chest",
     "equipment": "barbell",
-    "id": "0045",
+    "exerciseId": "0045",
     "name": "barbell guillotine bench press",
     "target": "pectorals",
     "secondaryMuscles": ["shoulders", "triceps"],
@@ -517,7 +517,7 @@
   {
     "bodyPart": "chest",
     "equipment": "barbell",
-    "id": "0047",
+    "exerciseId": "0047",
     "name": "barbell incline bench press",
     "target": "pectorals",
     "secondaryMuscles": ["shoulders", "triceps"],
@@ -536,7 +536,7 @@
   {
     "bodyPart": "chest",
     "equipment": "barbell",
-    "id": "0050",
+    "exerciseId": "0050",
     "name": "barbell incline shoulder raise",
     "target": "serratus anterior",
     "secondaryMuscles": ["deltoids", "trapezius"],
@@ -556,7 +556,7 @@
   {
     "bodyPart": "chest",
     "equipment": "barbell",
-    "id": "0122",
+    "exerciseId": "0122",
     "name": "barbell wide bench press",
     "target": "pectorals",
     "secondaryMuscles": ["shoulders", "triceps"],
@@ -575,7 +575,7 @@
   {
     "bodyPart": "chest",
     "equipment": "cable",
-    "id": "0151",
+    "exerciseId": "0151",
     "name": "cable bench press",
     "target": "pectorals",
     "secondaryMuscles": ["triceps", "shoulders"],
@@ -596,7 +596,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "barbell",
-    "id": "0079",
+    "exerciseId": "0079",
     "name": "barbell reverse wrist curl v. 2",
     "target": "forearms",
     "secondaryMuscles": ["biceps", "brachialis"],
@@ -615,7 +615,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "barbell",
-    "id": "0082",
+    "exerciseId": "0082",
     "name": "barbell reverse wrist curl",
     "target": "forearms",
     "secondaryMuscles": ["biceps", "brachialis"],
@@ -633,7 +633,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "barbell",
-    "id": "0104",
+    "exerciseId": "0104",
     "name": "barbell standing back wrist curl",
     "target": "forearms",
     "secondaryMuscles": ["biceps", "shoulders"],
@@ -651,7 +651,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "barbell",
-    "id": "0125",
+    "exerciseId": "0125",
     "name": "barbell wrist curl v. 2",
     "target": "forearms",
     "secondaryMuscles": ["biceps", "brachialis"],
@@ -670,7 +670,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "barbell",
-    "id": "0126",
+    "exerciseId": "0126",
     "name": "barbell wrist curl",
     "target": "forearms",
     "secondaryMuscles": ["biceps", "brachialis"],
@@ -688,7 +688,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "cable",
-    "id": "0210",
+    "exerciseId": "0210",
     "name": "cable reverse wrist curl",
     "target": "forearms",
     "secondaryMuscles": ["forearms", "wrists"],
@@ -707,7 +707,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "cable",
-    "id": "0224",
+    "exerciseId": "0224",
     "name": "cable standing back wrist curl",
     "target": "forearms",
     "secondaryMuscles": ["biceps", "brachialis"],
@@ -726,7 +726,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "cable",
-    "id": "0247",
+    "exerciseId": "0247",
     "name": "cable wrist curl",
     "target": "forearms",
     "secondaryMuscles": ["biceps", "brachialis"],
@@ -746,7 +746,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "dumbbell",
-    "id": "0347",
+    "exerciseId": "0347",
     "name": "dumbbell lying pronation",
     "target": "forearms",
     "secondaryMuscles": ["biceps", "shoulders"],
@@ -764,7 +764,7 @@
   {
     "bodyPart": "lower arms",
     "equipment": "dumbbell",
-    "id": "0349",
+    "exerciseId": "0349",
     "name": "dumbbell lying supination",
     "target": "forearms",
     "secondaryMuscles": ["biceps", "shoulders"],
@@ -782,7 +782,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "barbell",
-    "id": "0088",
+    "exerciseId": "0088",
     "name": "barbell seated calf raise",
     "target": "calves",
     "secondaryMuscles": ["hamstrings", "quadriceps"],
@@ -801,7 +801,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "barbell",
-    "id": "0108",
+    "exerciseId": "0108",
     "name": "barbell standing leg calf raise",
     "target": "calves",
     "secondaryMuscles": ["hamstrings", "glutes"],
@@ -818,7 +818,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "barbell",
-    "id": "0111",
+    "exerciseId": "0111",
     "name": "barbell standing rocking leg calf raise",
     "target": "calves",
     "secondaryMuscles": ["hamstrings", "quadriceps"],
@@ -835,7 +835,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "body weight",
-    "id": "0257",
+    "exerciseId": "0257",
     "name": "circles knee stretch",
     "target": "calves",
     "secondaryMuscles": ["hamstrings", "quadriceps"],
@@ -852,7 +852,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "body weight",
-    "id": "0284",
+    "exerciseId": "0284",
     "name": "donkey calf raise",
     "target": "calves",
     "secondaryMuscles": ["hamstrings", "glutes"],
@@ -870,7 +870,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "dumbbell",
-    "id": "0400",
+    "exerciseId": "0400",
     "name": "dumbbell seated one leg calf raise",
     "target": "calves",
     "secondaryMuscles": ["hamstrings", "glutes"],
@@ -889,7 +889,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "dumbbell",
-    "id": "0409",
+    "exerciseId": "0409",
     "name": "dumbbell single leg calf raise",
     "target": "calves",
     "secondaryMuscles": ["ankles"],
@@ -907,7 +907,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "dumbbell",
-    "id": "0417",
+    "exerciseId": "0417",
     "name": "dumbbell standing calf raise",
     "target": "calves",
     "secondaryMuscles": ["ankles"],
@@ -924,7 +924,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "leverage machine",
-    "id": "0594",
+    "exerciseId": "0594",
     "name": "lever seated calf raise",
     "target": "calves",
     "secondaryMuscles": ["soleus", "ankle stabilizers"],
@@ -943,7 +943,7 @@
   {
     "bodyPart": "lower legs",
     "equipment": "leverage machine",
-    "id": "0605",
+    "exerciseId": "0605",
     "name": "lever standing calf raise",
     "target": "calves",
     "secondaryMuscles": ["soleus", "ankle stabilizers"],
@@ -961,7 +961,7 @@
   {
     "bodyPart": "neck",
     "equipment": "body weight",
-    "id": "0716",
+    "exerciseId": "0716",
     "name": "side push neck stretch",
     "target": "levator scapulae",
     "secondaryMuscles": ["trapezius", "sternocleidomastoid"],
@@ -980,7 +980,7 @@
   {
     "bodyPart": "neck",
     "equipment": "body weight",
-    "id": "1403",
+    "exerciseId": "1403",
     "name": "neck side stretch",
     "target": "levator scapulae",
     "secondaryMuscles": ["trapezius", "sternocleidomastoid"],
@@ -998,7 +998,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0041",
+    "exerciseId": "0041",
     "name": "barbell front raise",
     "target": "delts",
     "secondaryMuscles": ["biceps", "triceps"],
@@ -1015,7 +1015,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0067",
+    "exerciseId": "0067",
     "name": "barbell one arm snatch",
     "target": "delts",
     "secondaryMuscles": ["traps", "forearms", "core"],
@@ -1036,7 +1036,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0075",
+    "exerciseId": "0075",
     "name": "barbell rear delt raise",
     "target": "delts",
     "secondaryMuscles": ["traps", "rhomboids"],
@@ -1054,7 +1054,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0076",
+    "exerciseId": "0076",
     "name": "barbell rear delt row",
     "target": "delts",
     "secondaryMuscles": ["trapezius", "rhomboids", "biceps"],
@@ -1073,7 +1073,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0086",
+    "exerciseId": "0086",
     "name": "barbell seated behind head military press",
     "target": "delts",
     "secondaryMuscles": ["triceps", "upper back"],
@@ -1092,7 +1092,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0087",
+    "exerciseId": "0087",
     "name": "barbell seated bradford rocky press",
     "target": "delts",
     "secondaryMuscles": ["triceps", "upper back"],
@@ -1110,7 +1110,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0091",
+    "exerciseId": "0091",
     "name": "barbell seated overhead press",
     "target": "delts",
     "secondaryMuscles": ["triceps", "upper back"],
@@ -1129,7 +1129,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0100",
+    "exerciseId": "0100",
     "name": "barbell skier",
     "target": "delts",
     "secondaryMuscles": ["triceps", "core"],
@@ -1147,7 +1147,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0105",
+    "exerciseId": "0105",
     "name": "barbell standing bradford press",
     "target": "delts",
     "secondaryMuscles": ["triceps", "upper back"],
@@ -1164,7 +1164,7 @@
   {
     "bodyPart": "shoulders",
     "equipment": "barbell",
-    "id": "0107",
+    "exerciseId": "0107",
     "name": "barbell standing front raise over head",
     "target": "delts",
     "secondaryMuscles": ["triceps", "upper back"],
@@ -1183,7 +1183,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "assisted (towel)",
-    "id": "0018",
+    "exerciseId": "0018",
     "name": "assisted standing triceps extension (with towel)",
     "target": "triceps",
     "secondaryMuscles": ["shoulders"],
@@ -1201,7 +1201,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "leverage machine",
-    "id": "0019",
+    "exerciseId": "0019",
     "name": "assisted triceps dip (kneeling)",
     "target": "triceps",
     "secondaryMuscles": ["chest", "shoulders"],
@@ -1219,7 +1219,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "barbell",
-    "id": "0023",
+    "exerciseId": "0023",
     "name": "barbell alternate biceps curl",
     "target": "biceps",
     "secondaryMuscles": ["forearms"],
@@ -1238,7 +1238,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "barbell",
-    "id": "0030",
+    "exerciseId": "0030",
     "name": "barbell close-grip bench press",
     "target": "triceps",
     "secondaryMuscles": ["chest", "shoulders"],
@@ -1257,7 +1257,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "barbell",
-    "id": "0031",
+    "exerciseId": "0031",
     "name": "barbell curl",
     "target": "biceps",
     "secondaryMuscles": ["forearms"],
@@ -1276,7 +1276,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "barbell",
-    "id": "0035",
+    "exerciseId": "0035",
     "name": "barbell decline close grip to skull press",
     "target": "triceps",
     "secondaryMuscles": ["chest", "shoulders"],
@@ -1293,7 +1293,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "barbell",
-    "id": "0038",
+    "exerciseId": "0038",
     "name": "barbell drag curl",
     "target": "biceps",
     "secondaryMuscles": ["forearms"],
@@ -1311,7 +1311,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "barbell",
-    "id": "0048",
+    "exerciseId": "0048",
     "name": "barbell incline reverse-grip press",
     "target": "triceps",
     "secondaryMuscles": ["chest", "shoulders"],
@@ -1329,7 +1329,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "barbell",
-    "id": "0052",
+    "exerciseId": "0052",
     "name": "barbell jm bench press",
     "target": "triceps",
     "secondaryMuscles": ["chest", "shoulders"],
@@ -1347,7 +1347,7 @@
   {
     "bodyPart": "upper arms",
     "equipment": "barbell",
-    "id": "0055",
+    "exerciseId": "0055",
     "name": "barbell lying close-grip press",
     "target": "triceps",
     "secondaryMuscles": ["chest", "shoulders"],
@@ -1366,7 +1366,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "assisted",
-    "id": "0016",
+    "exerciseId": "0016",
     "name": "assisted prone hamstring",
     "target": "hamstrings",
     "secondaryMuscles": ["glutes", "lower back"],
@@ -1384,7 +1384,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "body weight",
-    "id": "0020",
+    "exerciseId": "0020",
     "name": "balance board",
     "target": "quads",
     "secondaryMuscles": ["calves", "hamstrings", "glutes"],
@@ -1402,7 +1402,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "barbell",
-    "id": "0024",
+    "exerciseId": "0024",
     "name": "barbell bench front squat",
     "target": "quads",
     "secondaryMuscles": ["hamstrings", "glutes", "calves"],
@@ -1420,7 +1420,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "barbell",
-    "id": "0026",
+    "exerciseId": "0026",
     "name": "barbell bench squat",
     "target": "quads",
     "secondaryMuscles": ["glutes", "hamstrings", "calves"],
@@ -1441,7 +1441,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "barbell",
-    "id": "0028",
+    "exerciseId": "0028",
     "name": "barbell clean and press",
     "target": "quads",
     "secondaryMuscles": ["hamstrings", "glutes", "shoulders", "triceps"],
@@ -1461,7 +1461,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "barbell",
-    "id": "0029",
+    "exerciseId": "0029",
     "name": "barbell clean-grip front squat",
     "target": "glutes",
     "secondaryMuscles": ["quadriceps", "hamstrings", "calves", "core"],
@@ -1480,7 +1480,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "barbell",
-    "id": "0032",
+    "exerciseId": "0032",
     "name": "barbell deadlift",
     "target": "glutes",
     "secondaryMuscles": ["hamstrings", "lower back"],
@@ -1499,7 +1499,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "barbell",
-    "id": "0039",
+    "exerciseId": "0039",
     "name": "barbell front chest squat",
     "target": "glutes",
     "secondaryMuscles": ["quadriceps", "hamstrings", "calves", "core"],
@@ -1518,7 +1518,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "barbell",
-    "id": "0042",
+    "exerciseId": "0042",
     "name": "barbell front squat",
     "target": "glutes",
     "secondaryMuscles": ["quadriceps", "hamstrings", "calves", "core"],
@@ -1537,7 +1537,7 @@
   {
     "bodyPart": "upper legs",
     "equipment": "barbell",
-    "id": "0043",
+    "exerciseId": "0043",
     "name": "barbell full squat",
     "target": "glutes",
     "secondaryMuscles": ["quadriceps", "hamstrings", "calves", "core"],
@@ -1558,7 +1558,7 @@
   {
     "bodyPart": "waist",
     "equipment": "body weight",
-    "id": "0001",
+    "exerciseId": "0001",
     "name": "3/4 sit-up",
     "target": "abs",
     "secondaryMuscles": ["hip flexors", "lower back"],
@@ -1576,7 +1576,7 @@
   {
     "bodyPart": "waist",
     "equipment": "body weight",
-    "id": "0002",
+    "exerciseId": "0002",
     "name": "45° side bend",
     "target": "abs",
     "secondaryMuscles": ["obliques"],
@@ -1594,7 +1594,7 @@
   {
     "bodyPart": "waist",
     "equipment": "body weight",
-    "id": "0003",
+    "exerciseId": "0003",
     "name": "air bike",
     "target": "abs",
     "secondaryMuscles": ["hip flexors"],
@@ -1612,7 +1612,7 @@
   {
     "bodyPart": "waist",
     "equipment": "body weight",
-    "id": "0006",
+    "exerciseId": "0006",
     "name": "alternate heel touchers",
     "target": "abs",
     "secondaryMuscles": ["obliques"],
@@ -1630,7 +1630,7 @@
   {
     "bodyPart": "waist",
     "equipment": "assisted",
-    "id": "0010",
+    "exerciseId": "0010",
     "name": "assisted hanging knee raise with throw down",
     "target": "abs",
     "secondaryMuscles": ["hip flexors", "lower back"],
@@ -1647,7 +1647,7 @@
   {
     "bodyPart": "waist",
     "equipment": "assisted",
-    "id": "0011",
+    "exerciseId": "0011",
     "name": "assisted hanging knee raise",
     "target": "abs",
     "secondaryMuscles": ["hip flexors"],
@@ -1665,7 +1665,7 @@
   {
     "bodyPart": "waist",
     "equipment": "assisted",
-    "id": "0012",
+    "exerciseId": "0012",
     "name": "assisted lying leg raise with lateral throw down",
     "target": "abs",
     "secondaryMuscles": ["hip flexors", "obliques"],
@@ -1685,7 +1685,7 @@
   {
     "bodyPart": "waist",
     "equipment": "assisted",
-    "id": "0013",
+    "exerciseId": "0013",
     "name": "assisted lying leg raise with throw down",
     "target": "abs",
     "secondaryMuscles": ["hip flexors", "quadriceps"],
@@ -1706,7 +1706,7 @@
   {
     "bodyPart": "waist",
     "equipment": "medicine ball",
-    "id": "0014",
+    "exerciseId": "0014",
     "name": "assisted motion russian twist",
     "target": "abs",
     "secondaryMuscles": ["obliques", "lower back"],
@@ -1725,7 +1725,7 @@
   {
     "bodyPart": "waist",
     "equipment": "barbell",
-    "id": "0071",
+    "exerciseId": "0071",
     "name": "barbell press sit-up",
     "target": "abs",
     "secondaryMuscles": ["shoulders", "chest"],
