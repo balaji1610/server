@@ -18,21 +18,36 @@ app.use(cors());
 const defineExcerise = require("./models/exceriseModel");
 const defineSecondaryMuscle = require("./models/secondaryMuscleModel");
 const defineInstructions = require("./models/instructionsModel");
+const defineImages = require("./models/imageModel");
 
 const Excerise = defineExcerise(sequelize);
 const SecondaryMuscle = defineSecondaryMuscle(sequelize);
 const Instructions = defineInstructions(sequelize);
+const Images = defineImages(sequelize);
 
 // Associations
 Excerise.hasMany(SecondaryMuscle, {
   foreignKey: "exerciseId",
   sourceKey: "exerciseId",
 });
+Excerise.hasMany(Instructions, {
+  foreignKey: "exerciseId",
+  sourceKey: "exerciseId",
+});
+Excerise.hasMany(Images, {
+  foreignKey: "exerciseId",
+  sourceKey: "exerciseId",
+});
+
 SecondaryMuscle.belongsTo(Excerise, {
   foreignKey: "exerciseId",
   targetKey: "exerciseId",
 });
 Instructions.belongsTo(Excerise, {
+  foreignKey: "exerciseId",
+  targetKey: "exerciseId",
+});
+Images.belongsTo(Excerise, {
   foreignKey: "exerciseId",
   targetKey: "exerciseId",
 });
@@ -44,57 +59,69 @@ module.exports = {
   Instructions,
 };
 
+// console.log(images.ImageService());
 (async () => {
   try {
     await sequelize.sync();
 
-    const exceriseData = exercises.map((el) => {
-      const {
-        bodyPart,
-        equipment,
-        exerciseId,
-        name,
-        target,
-        description,
-        difficulty,
-        category,
-      } = el;
-      return {
-        bodyPart,
-        equipment,
-        exerciseId,
-        name,
-        target,
-        description,
-        difficulty,
-        category,
-      };
-    });
+    // const exceriseData = exercises.map((el) => {
+    //   const {
+    //     bodyPart,
+    //     equipment,
+    //     exerciseId,
+    //     name,
+    //     target,
+    //     description,
+    //     difficulty,
+    //     category,
+    //   } = el;
+    //   return {
+    //     bodyPart,
+    //     equipment,
+    //     exerciseId,
+    //     name,
+    //     target,
+    //     description,
+    //     difficulty,
+    //     category,
+    //   };
+    // });
 
-    await Excerise.bulkCreate(exceriseData, {
-      ignoreDuplicates: true,
-    });
+    // await Excerise.bulkCreate(exceriseData, {
+    //   ignoreDuplicates: true,
+    // });
 
-    const muscles = exercises.flatMap(({ exerciseId, secondaryMuscles }) => {
-      return secondaryMuscles.map((muscle) => {
-        return {
-          exerciseId,
-          muscle,
-        };
-      });
-    });
+    // const muscles = exercises.flatMap(({ exerciseId, secondaryMuscles }) => {
+    //   return secondaryMuscles.map((muscle) => {
 
-    await SecondaryMuscle.bulkCreate(muscles);
+    //     return {
+    //       exerciseId,
+    //       muscle,
+    //     };
+    //   });
+    // });
 
-    const allinstructions = exercises.flatMap(
-      ({ exerciseId, instructions }) => {
-        return instructions.map((instruction) => {
-          return { exerciseId, instruction };
-        });
-      }
-    );
-    await Instructions.bulkCreate(allinstructions);
-    console.log("Data inserted successfully.");
+    // await SecondaryMuscle.bulkCreate(muscles, {
+    //   ignoreDuplicates: true, // skip duplicates
+    // });
+
+    // const allinstructions = exercises.flatMap(
+    //   ({ exerciseId, instructions }) => {
+    //     return instructions.map((instruction) => {
+    //       return { exerciseId, instruction };
+    //     });
+    //   }
+    // );
+
+    // await Instructions.bulkCreate(allinstructions, {
+    //   ignoreDuplicates: true,
+    // });
+
+    // await Images.bulkCreate(images.ImageService(), {
+    //   ignoreDuplicates: true,
+    // });
+
+    console.log("connect to the database");
   } catch (error) {
     console.error("Unable to connect to the database:", error);
   }
@@ -105,14 +132,18 @@ app.get("/status", (req, res) => {
 });
 
 //exercises
-app.get("/exercises", (req, res) => {
-  res.status(200).send(exercises);
+app.get("/exercises", async (req, res) => {
+  const allExcerise = await Excerise.findAll({
+    include: [SecondaryMuscle, Instructions],
+  });
+
+  res.status(200).send(allExcerise);
 });
 
 //exercises:exerciseId
-app.get("/exercises/exerciseId/:exerciseId", (req, res) => {
-  const getId = exercises.filter((el) => {
-    return el.exerciseId == req.params.exerciseId;
+app.get("/exercises/exerciseId/:exerciseId", async (req, res) => {
+  const getId = await Excerise.findAll({
+    where: { exerciseId: req.params.exerciseId },
   });
   if (getId.length) {
     res.status(200).send(getId);
@@ -122,10 +153,9 @@ app.get("/exercises/exerciseId/:exerciseId", (req, res) => {
 });
 
 //exercises/target/:target
-app.get("/exercises/target/:target", (req, res) => {
-  console.log(req.params.target);
-  const getTarget = exercises.filter((el) => {
-    return el.target === req.params.target;
+app.get("/exercises/target/:target", async (req, res) => {
+  const getTarget = await Excerise.findAll({
+    where: { target: req.params.target },
   });
 
   if (getTarget.length) {
@@ -136,9 +166,9 @@ app.get("/exercises/target/:target", (req, res) => {
 });
 
 //exercises/equipment/:equipment
-app.get("/exercises/equipment/:equipment", (req, res) => {
-  const getequipment = exercises.filter((el) => {
-    return el.equipment === req.params.equipment;
+app.get("/exercises/equipment/:equipment", async (req, res) => {
+  const getequipment = await Excerise.findAll({
+    where: { equipment: req.params.equipment },
   });
 
   if (getequipment.length) {
@@ -149,15 +179,18 @@ app.get("/exercises/equipment/:equipment", (req, res) => {
 });
 
 //bodypartlist
-app.get("/exercises/bodyPartList", (req, res) => {
-  console.log("bodyPartList");
-  res.status(200).send(list.bodypartlist());
+app.get("/exercises/bodyPartList", async (req, res) => {
+  const getAllBodyPartList = await Excerise.findAll();
+  const bodyPartList = [
+    ...new Set(getAllBodyPartList.map(({ bodyPart }) => bodyPart)),
+  ];
+  res.status(200).send(bodyPartList);
 });
 
 //exercises/bodyPart/:bodyPart
-app.get("/exercises/bodyPart/:bodypart", (req, res) => {
-  const getBodyPart = exercises.filter((el) => {
-    return el.bodyPart === req.params.bodypart;
+app.get("/exercises/bodyPart/:bodypart", async (req, res) => {
+  const getBodyPart = await Excerise.findAll({
+    where: { bodypart: req.params.bodypart },
   });
   if (getBodyPart.length) {
     res.status(200).send(getBodyPart);
@@ -166,22 +199,14 @@ app.get("/exercises/bodyPart/:bodypart", (req, res) => {
   }
 });
 
-//image/:id
-app.get("/image", (req, res) => {
+//image/:exerciseId
+app.get("/image", async (req, res) => {
   const { exerciseId } = req.query;
-  const findImageId = images
-    .ImageService()
-    .filter((el) => el.exerciseId == exerciseId)
-    .map((el) => {
-      return el.image;
-    });
+  const findImageId = await Images.findAll({
+    where: { exerciseId: exerciseId },
+  });
 
-  if (findImageId.length) {
-    res.sendFile(findImageId[0]);
-  } else {
-    const noImage = path.join(__dirname, "./images/no-image-available.png");
-    res.sendFile(noImage);
-  }
+  res.sendFile(findImageId);
 });
 
 app.listen(PORT, () => {

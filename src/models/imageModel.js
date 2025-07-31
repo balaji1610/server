@@ -2,31 +2,22 @@ const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) =>
   sequelize.define(
-    "instructions",
+    "images",
     {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
       },
-      instruction: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
       exerciseId: {
         type: DataTypes.STRING,
-        allowNull: false,
+        unique: true,
+      },
+      image: {
+        type: DataTypes.BLOB,
       },
     },
     {
       timestamps: false,
-    },
-    {
-      indexes: [
-        {
-          unique: true,
-          fields: ["exerciseId", "instruction"], // 👈 prevent duplicates for same combo
-        },
-      ],
     }
   );
