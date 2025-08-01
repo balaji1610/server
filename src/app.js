@@ -205,8 +205,13 @@ app.get("/image", async (req, res) => {
   const findImageId = await Images.findAll({
     where: { exerciseId: exerciseId },
   });
+  const findImage = findImageId[0]?.image;
 
-  res.sendFile(findImageId);
+  if (findImage) {
+    res.send(findImage);
+  } else {
+    res.send("No Image");
+  }
 });
 
 app.listen(PORT, () => {
